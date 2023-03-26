@@ -5,6 +5,7 @@ import (
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/websocket/v2"
 	"github.com/whatsauth/whatsauth"
+	"github.com/xshazks/gosaw"
 	"github.com/xshazks/monitoringstudent/config"
 )
 
@@ -46,7 +47,11 @@ func GetHome(c *fiber.Ctx) error {
 	return c.JSON(getip)
 }
 
-func Getdatasaw(c *fiber.Ctx) error {
-	// getip :=
-	return c.JSON(getip)
+func InsertData(c *fiber.Ctx) error {
+	model := new(gosaw.Dafdir)
+	insdata := gosaw.InsertDafdir(config.MongoConn,
+		model.Keterangan,
+		model.Kehadiran,
+	)
+	return c.JSON(insdata)
 }
