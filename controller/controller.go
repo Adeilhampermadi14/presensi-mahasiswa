@@ -35,11 +35,11 @@ func GetHome(c *fiber.Ctx) error {
 	return c.JSON(getip)
 }
 
-func InsertData(c *fiber.Ctx) error {
-	model := new(gosaw.Dafdir)
-	insdata := gosaw.InsertDafdir(config.MongoConn,
-		model.Keterangan,
-		model.Kehadiran,
+func InsertDafdir(c *fiber.Ctx) error {
+	dafdir := new(gosaw.Dafdir)
+	ps := gosaw.InsertDafdir(config.MongoConn,
+		dafdir.Keterangan,
+		dafdir.Kehadiran,
 	)
-	return c.JSON(insdata)
+	return c.JSON(ps)
 }
