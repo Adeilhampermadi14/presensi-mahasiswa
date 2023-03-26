@@ -5,7 +5,6 @@ import (
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/websocket/v2"
 	"github.com/whatsauth/whatsauth"
-	"github.com/xshazks/gosaw"
 	"github.com/xshazks/monitoringstudent/config"
 )
 
