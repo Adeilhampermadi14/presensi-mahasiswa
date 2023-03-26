@@ -1,11 +1,11 @@
-module iteung
+module github.com/xshazks/monitoringstudent
 
 go 1.20
 
 require (
 	github.com/aiteung/atdb v0.0.7
 	github.com/aiteung/musik v0.0.5
-	github.com/gofiber/fiber/v2 v2.42.0
+	github.com/gofiber/fiber/v2 v2.43.0
 	github.com/gofiber/websocket/v2 v2.1.4
 	github.com/whatsauth/whatsauth v0.1.89
 )
@@ -38,7 +38,7 @@ require (
 	github.com/savsgio/gotils v0.0.0-20230208104028-c358bd845dee // indirect
 	github.com/tinylib/msgp v1.1.8 // indirect
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
-	github.com/valyala/fasthttp v1.44.0 // indirect
+	github.com/valyala/fasthttp v1.45.0 // indirect
 	github.com/valyala/tcplisten v1.0.0 // indirect
 	github.com/whatsauth/watoken v0.1.2 // indirect
 	github.com/xdg-go/pbkdf2 v1.0.0 // indirect
