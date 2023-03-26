@@ -5,6 +5,7 @@ import (
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/websocket/v2"
 	"github.com/whatsauth/whatsauth"
+	"github.com/xshazks/gosaw"
 	"github.com/xshazks/monitoringstudent/config"
 )
 
@@ -43,5 +44,10 @@ func PostWhatsAuthRequest(c *fiber.Ctx) error {
 
 func GetHome(c *fiber.Ctx) error {
 	getip := musik.GetIPaddress()
+	return c.JSON(getip)
+}
+
+func Getdatasaw(c *fiber.Ctx) error {
+	getip := 
 	return c.JSON(getip)
 }
