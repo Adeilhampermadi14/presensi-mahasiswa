@@ -43,3 +43,8 @@ func InsertDafdir(c *fiber.Ctx) error {
 	)
 	return c.JSON(ps)
 }
+
+func GetDataDafdir(c *fiber.Ctx) error {
+	getket := gosaw.GetDataDafdir("Masuk")
+	return c.JSON(getket)
+}
