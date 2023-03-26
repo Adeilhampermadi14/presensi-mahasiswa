@@ -60,6 +60,6 @@ func GetDafpel(c *fiber.Ctx) error {
 }
 
 func GetDataPembayaran(c *fiber.Ctx) error {
-	getpel := gosaw.GetDataPembayaran("Terbayar")
-	return c.JSON(getpel)
+	getyar := gosaw.GetDataPembayaran("Terbayar")
+	return c.JSON(getyar)
 }
