@@ -1,7 +1,7 @@
 package url
 
 import (
-	"github.com/xshazks/monitoringstudent/controller"
+	"github.com/Adeilhampermadi14/presensi-mahasiswa/controller"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/websocket/v2"

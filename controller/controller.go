@@ -1,12 +1,11 @@
 package controller
 
 import (
+	"github.com/Adeilhampermadi14/presensi-mahasiswa/config"
 	"github.com/aiteung/musik"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/websocket/v2"
 	"github.com/whatsauth/whatsauth"
-	"github.com/xshazks/gosaw"
-	"github.com/xshazks/monitoringstudent/config"
 )
 
 func WsWhatsAuthQR(c *websocket.Conn) {
@@ -36,8 +35,8 @@ func GetHome(c *fiber.Ctx) error {
 }
 
 func InsertDafdir(c *fiber.Ctx) error {
-	dafdir := new(gosaw.Dafdir)
-	ps := gosaw.InsertDafdir(config.MongoConn,
+	dafdir := new(xxx.Dafdir)
+	ps := xxx.InsertDafdir(config.MongoConn,
 		dafdir.Keterangan,
 		dafdir.Kehadiran,
 	)
@@ -45,21 +44,21 @@ func InsertDafdir(c *fiber.Ctx) error {
 }
 
 func GetDataDafdir(c *fiber.Ctx) error {
-	getket := gosaw.GetDataDafdir("Masuk")
+	getket := xxx.GetDataDafdir("Masuk")
 	return c.JSON(getket)
 }
 
 func GetDataNilai(c *fiber.Ctx) error {
-	getlai := gosaw.GetDataNilai("Matematika, Biologi")
+	getlai := xxx.GetDataNilai("Matematika, Biologi")
 	return c.JSON(getlai)
 }
 
 func GetDafpel(c *fiber.Ctx) error {
-	getpel := gosaw.GetDataDafpel("Terlambat")
+	getpel := xxx.GetDataDafpel("Terlambat")
 	return c.JSON(getpel)
 }
 
 func GetDataPembayaran(c *fiber.Ctx) error {
-	getyar := gosaw.GetDataPembayaran("Terbayar")
+	getyar := xxx.GetDataPembayaran("Terbayar")
 	return c.JSON(getyar)
 }

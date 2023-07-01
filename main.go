@@ -10,7 +10,7 @@ import (
 
 	"github.com/whatsauth/whatsauth"
 
-	"github.com/xshazks/monitoringstudent/url"
+	"github.com/Adeilhampermadi14/presensi-mahasiswa/url"
 
 	"github.com/gofiber/fiber/v2"
 )
